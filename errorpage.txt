@@ -1,0 +1,20 @@
+
+    ErrorDocument 404 /custom_404.html
+    ErrorDocument 500 /custom_50x.html
+    ErrorDocument 502 /custom_50x.html
+    ErrorDocument 503 /custom_50x.html
+    ErrorDocument 504 /custom_50x.html
+
+    <Files "custom_404.html">
+        <If "-z %{ENV:REDIRECT_STATUS}">
+            RedirectMatch 404 ^/custom_404.html$
+        </If>
+    </Files>
+
+    <Files "custom_50x.html">
+        <If "-z %{ENV:REDIRECT_STATUS}">
+            RedirectMatch 404 ^/custom_50x.html$
+        </If>
+    </Files>
+
+    ProxyPass /proxytest "http://localhost:9000"
