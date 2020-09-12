@@ -1,0 +1,8 @@
+ExtFilterDefine nodirtywords \
+cmd="/bin/sed s/damn/darn/g" \ EnableEnv=sanitize_output
+
+<Directory />
+SetOutputFilter nodirtywords
+SetEnvIf Remote_Host ceo.mycompany.com \
+sanitize_output
+</Directory>
